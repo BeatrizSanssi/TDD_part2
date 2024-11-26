@@ -9,7 +9,7 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose",
     "build": "vite build"
   },
-  "author": "Beatriz Sanssi <bs222eh@student.lnu.se>",
+  "author": "Beatriz Sanssi <bs222eh@student.lnu.se>, Sabrina Prichard-Lybeck <sp223kz@student.lnu.se>",
   "license": "MIT",
   "dependencies": {
     "jest": "^29.7.0",
