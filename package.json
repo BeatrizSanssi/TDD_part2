@@ -1,0 +1,18 @@
+{
+  "name": "tdd_part2",
+  "version": "1.0.0",
+  "description": "TDD project",
+  "main": "index.js",
+  "type": "module",
+  "dev": "vite",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose",
+    "build": "vite build"
+  },
+  "author": "Beatriz Sanssi <bs222eh@student.lnu.se>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "vite": "^6.0.0"
+  }
+}
