@@ -7,16 +7,20 @@
 export class Hangman {
   #wordList = []
 
-  /**
-   * 
-   * @param {Array} the array of words to be used in the game.
-   */
-  constructor(wordList) {
+  constructor() {
+  }
+
+  setWordList(wordList) {
     if (wordList.length === 0) {
       throw new Error('No words in wordlist')
     }
 
     this.#wordList = wordList
   }
+
+  getWordList() {
+    return this.#wordList
+  }
 }
+
 

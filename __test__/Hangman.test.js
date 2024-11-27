@@ -6,6 +6,17 @@
  * @author Sabrina Prichard-Lybeck <sp223kz@student.lnu.se> 
  */
 import { Hangman } from '../src/components/Hangman.js'
+import { jest } from '@jest/globals'
+
+const mockEmptyWordList = []
+const mockWordList = ['apple', 'banana', 'cherry']
+
+jest.mock('../src/components/Hangman.js', () => {
+  return jest.fn().mockImplementation(() => ({
+      setWordList: jest.fn().mockResolvedValue(mockEmptyWordList),
+      getWordList: jest.fn().mockResolvedValue(mockEmptyWordList)
+  }))
+})
 
 describe('Hangman', () => {
   it('should create an instance of Hangman', () => {
@@ -15,8 +26,8 @@ describe('Hangman', () => {
   })
 
   it('should throw an error if there are no words in wordlist', () => {
-    const wordList = []
+    const hangman = new Hangman()
 
-    expect(() => new Hangman(wordList)).toThrow('No words in wordlist')
+    expect(() => hangman.setWordList(mockEmptyWordList)).toThrowError('No words in wordlist')
   })
 })

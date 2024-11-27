@@ -7,7 +7,8 @@
   "dev": "vite",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose",
-    "build": "vite build"
+    "build": "vite build",
+    "dev": "vite"
   },
   "author": "Beatriz Sanssi <bs222eh@student.lnu.se>, Sabrina Prichard-Lybeck <sp223kz@student.lnu.se>",
   "license": "MIT",
