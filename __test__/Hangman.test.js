@@ -8,8 +8,9 @@
 import { Hangman } from '../src/components/Hangman.js'
 
 describe('Hangman', () => {
-  it('should render Hangman component', () => {
+  it('should create an instance of Hangman', () => {
     const hangman = new Hangman()
+
     expect(hangman).toBeDefined()
   })
   // it('should throw an error if there are no words in wordlist', () => {
