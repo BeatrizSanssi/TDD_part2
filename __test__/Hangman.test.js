@@ -13,9 +13,12 @@ describe('Hangman', () => {
 
     expect(hangman).toBeDefined()
   })
-  // it('should throw an error if there are no words in wordlist', () => {
-  //   const hangman = new Hangman()
-  //   const wordlist = []
-  //   expect(() => hangman.guessWord()).toThrowError('No words in wordlist')
-  // })
+
+  it('should throw an error if there are no words in wordlist', () => {
+    const wordList = []
+
+    const hangman = new Hangman(wordList)
+
+    expect(() => hangman.guessWord()).toThrowError('No words in wordlist')
+  })
 })
