@@ -17,8 +17,6 @@ describe('Hangman', () => {
   it('should throw an error if there are no words in wordlist', () => {
     const wordList = []
 
-    const hangman = new Hangman(wordList)
-
-    expect(() => hangman.guessWord()).toThrowError('No words in wordlist')
+    expect(() => new Hangman(wordList)).toThrow('No words in wordlist')
   })
 })

@@ -5,7 +5,18 @@
  * @author Sabrina Prichard-Lybeck <sp223kz@student.lnu.se> 
  */
 export class Hangman {
-  constructor() {
+  #wordList = []
+
+  /**
+   * 
+   * @param {Array} the array of words to be used in the game.
+   */
+  constructor(wordList) {
+    if (wordList.length === 0) {
+      throw new Error('No words in wordlist')
+    }
+
+    this.#wordList = wordList
   }
 }
 
