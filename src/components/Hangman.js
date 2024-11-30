@@ -15,6 +15,10 @@ export class Hangman {
       throw new Error('No words in wordlist')
     }
 
+    if (wordList === 'notAnArray') {
+      throw new Error('Word list must be an array')
+    }
+
     this.#wordList = wordList
   }
 
