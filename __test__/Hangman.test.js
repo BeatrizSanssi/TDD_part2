@@ -6,7 +6,7 @@
  * @author Sabrina Prichard-Lybeck <sp223kz@student.lnu.se> 
  */
 import { Hangman } from '../src/components/Hangman.js'
-import { jest } from '@jest/globals'
+import { it, jest } from '@jest/globals'
 
 const mockEmptyWordList = []
 const mockWordList = ['apple', 'banana', 'cherry']
@@ -29,6 +29,12 @@ describe('Hangman', () => {
     const hangman = new Hangman()
 
     expect(() => hangman.setWordList(mockEmptyWordList)).toThrowError('No words in wordlist')
+  })
+
+  it('should return the wordlist', () => {
+    const hangman = new Hangman()
+
+    expect(hangman.getWordList()).toEqual(mockWordList)
   })
 
   it('should returns true if the guessed letter is in the word', () => {
