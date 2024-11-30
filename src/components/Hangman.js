@@ -23,8 +23,7 @@ export class Hangman {
   }
 
   checkGuess(letter, word) {
-    // return word.includes(letter)
-    return true
+    return word.includes(letter)
   }
 }
 
