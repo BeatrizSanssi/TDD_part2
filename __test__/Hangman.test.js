@@ -30,4 +30,9 @@ describe('Hangman', () => {
 
     expect(() => hangman.setWordList(mockEmptyWordList)).toThrowError('No words in wordlist')
   })
+
+  it('should returns true if the guessed letter is in the word', () => {
+    const word = 'hangman'
+    expect(checkGuess('h', word)).toBe(true)
+  })
 })
