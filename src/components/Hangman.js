@@ -15,7 +15,7 @@ export class Hangman {
       throw new Error('No words in wordlist')
     }
 
-    if (wordList === 'notAnArray') {
+    if (!Array.isArray(wordList)) {
       throw new Error('Word list must be an array')
     }
 
