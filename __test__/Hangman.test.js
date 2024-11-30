@@ -60,4 +60,14 @@ describe('Hangman', () => {
     const hangman = new Hangman()
     expect(() => hangman.setWordList('notAnArray')).toThrowError()
   })
+
+  it('should throw an error when setting a number as word list', () => {
+    const hangman = new Hangman()
+    expect(() => hangman.setWordList(123)).toThrowError('Word list must be an array')
+  })
+
+  it('should throw an error when setting an object as word list', () => {
+    const hangman = new Hangman()
+    expect(() => hangman.setWordList({ key: 'value' })).toThrowError('Word list must be an array')
+  })
 })
