@@ -21,6 +21,10 @@ export class Hangman {
   getWordList() {
     return this.#wordList
   }
+
+  checkGuess(letter, word) {
+    return true
+  }
 }
 
 
