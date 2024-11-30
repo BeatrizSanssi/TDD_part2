@@ -36,4 +36,10 @@ describe('Hangman', () => {
     const word = 'hangman'
     expect(hangman.checkGuess('h', word)).toBe(true)
   })
+
+  it('should return false if the guessed letter is not in the word', () => {
+    const hangman = new Hangman()
+    const word = 'hangman'
+    expect(hangman.checkGuess('z', word)).toBe(false)
+  })
 })
