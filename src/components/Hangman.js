@@ -5,7 +5,7 @@
  * @author Sabrina Prichard-Lybeck <sp223kz@student.lnu.se> 
  */
 export class Hangman {
-  #wordList = []
+  #wordList = ['apple', 'banana', 'cherry']
 
   constructor() {
   }
