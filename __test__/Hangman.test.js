@@ -37,6 +37,13 @@ describe('Hangman', () => {
     expect(hangman.getWordList()).toEqual(mockWordList)
   })
 
+  it('should return the updated wordlist after setting it', () => {
+    const hangman = new Hangman()
+    hangman.setWordList(mockWordList)
+  
+    expect(hangman.getWordList()).toEqual(mockWordList)
+  })
+
   it('should returns true if the guessed letter is in the word', () => {
     const hangman = new Hangman()
     const word = 'hangman'
@@ -47,5 +54,10 @@ describe('Hangman', () => {
     const hangman = new Hangman()
     const word = 'hangman'
     expect(hangman.checkGuess('z', word)).toBe(false)
+  })
+
+  it('should throw an error when setting a non-array word list', () => {
+    const hangman = new Hangman()
+    expect(() => hangman.setWordList('notAnArray')).toThrowError()
   })
 })
