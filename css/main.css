@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.hidden-word {
+  font-size: 2rem;
+  letter-spacing: 1.5rem;
+  margin: 20px 0;
+}
+.message {
+  margin-top: 10px;
+  color: red;
+}
