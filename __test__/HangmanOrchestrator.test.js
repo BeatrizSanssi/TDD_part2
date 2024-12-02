@@ -13,4 +13,10 @@ describe('HangmanOrchestrator', () => {
 
     expect(hangman).toBeDefined()
   })
+
+  it ('should create an instance of WordList', () => {
+    const hangman = new HangmanOrchestrator()
+
+    expect(hangman.getWordList()).toBeDefined() 
+  })
 })
