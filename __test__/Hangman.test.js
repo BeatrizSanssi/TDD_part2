@@ -100,7 +100,7 @@ describe('Hangman', () => {
 
   it('should return the length of a word', () => {
     const hangman = new Hangman()
-    hangman.setWordList(['apple'])
+    hangman.setWordList(mockWordList)
     const word = hangman.selectRandomWord()
     const wordLength = hangman.getWordLength(word)
 
