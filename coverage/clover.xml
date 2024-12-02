@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1733144885766" clover="3.2.0">
-  <project timestamp="1733144885766" name="All files">
+<coverage generated="1733144945385" clover="3.2.0">
+  <project timestamp="1733144945385" name="All files">
     <metrics statements="16" coveredstatements="15" conditionals="6" coveredconditionals="5" methods="7" coveredmethods="7" elements="29" coveredelements="27" complexity="0" loc="16" ncloc="16" packages="1" files="3" classes="3"/>
     <file name="HangmanOrchestrator.js" path="/Users/beasanssi/1dv609/TDD_part2/src/components/HangmanOrchestrator.js">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="14" count="2" type="stmt"/>
-      <line num="15" count="2" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="15" count="3" type="stmt"/>
       <line num="18" count="1" type="stmt"/>
     </file>
     <file name="WordGuesser.js" path="/Users/beasanssi/1dv609/TDD_part2/src/components/WordGuesser.js">
@@ -14,7 +14,7 @@
     </file>
     <file name="WordList.js" path="/Users/beasanssi/1dv609/TDD_part2/src/components/WordList.js">
       <metrics statements="12" coveredstatements="11" conditionals="6" coveredconditionals="5" methods="4" coveredmethods="4"/>
-      <line num="8" count="11" type="stmt"/>
+      <line num="8" count="12" type="stmt"/>
       <line num="11" count="8" type="cond" truecount="2" falsecount="0"/>
       <line num="12" count="1" type="stmt"/>
       <line num="15" count="7" type="cond" truecount="2" falsecount="0"/>

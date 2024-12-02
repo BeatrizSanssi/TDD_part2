@@ -19,4 +19,10 @@ describe('HangmanOrchestrator', () => {
 
     expect(hangman.getWordList()).toBeDefined() 
   })
+
+  it ('should create an instance of WordGuesser', () => {
+    const hangman = new HangmanOrchestrator()
+
+    expect(hangman.getWordGuesser()).toBeDefined() 
+  })
 })
