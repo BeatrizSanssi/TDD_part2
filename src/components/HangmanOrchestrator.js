@@ -17,6 +17,10 @@ export class HangmanOrchestrator {
   getWordList() {
     return this.#wordGuesser
   }
+
+  getWordGuesser() {
+    return this.#wordGuesser
+  }
 }
 
 
