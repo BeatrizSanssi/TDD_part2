@@ -14,6 +14,9 @@ export class HangmanOrchestrator {
     this.#wordList = new WordList()
     this.#wordGuesser = new WordGuesser()
   }
+  getWordList() {
+    return this.#wordGuesser
+  }
 }
 
 
