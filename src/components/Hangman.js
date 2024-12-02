@@ -31,7 +31,9 @@ export class Hangman {
   }
 
   selectRandomWord() {
-    return this.#wordList[0]
+    const randomIndex = Math.floor(Math.random() * this.#wordList.length)
+
+    return this.#wordList[randomIndex]
   }
 }
 
