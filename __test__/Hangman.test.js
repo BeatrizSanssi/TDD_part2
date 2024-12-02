@@ -97,4 +97,13 @@ describe('Hangman', () => {
 
     expect(uniqueWords.length).toBeGreaterThan(1)
   })
+
+  it('should return the length of a word', () => {
+    const hangman = new Hangman()
+    hangman.setWordList(['apple'])
+    const word = hangman.selectRandomWord()
+    const wordLength = hangman.getWordLength(word)
+
+    expect(wordLength).toBe(word.length)
+  })
 })
