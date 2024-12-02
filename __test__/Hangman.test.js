@@ -13,8 +13,8 @@ const mockWordList = ['apple', 'banana', 'cherry']
 
 jest.mock('../src/components/Hangman.js', () => {
   return jest.fn().mockImplementation(() => ({
-      setWordList: jest.fn().mockResolvedValue(mockEmptyWordList),
-      getWordList: jest.fn().mockResolvedValue(mockEmptyWordList)
+    setWordList: jest.fn().mockResolvedValue(mockEmptyWordList),
+    getWordList: jest.fn().mockResolvedValue(mockEmptyWordList)
   }))
 })
 
@@ -40,7 +40,7 @@ describe('Hangman', () => {
   it('should return the updated wordlist after setting it', () => {
     const hangman = new Hangman()
     hangman.setWordList(mockWordList)
-  
+
     expect(hangman.getWordList()).toEqual(mockWordList)
   })
 
@@ -79,5 +79,22 @@ describe('Hangman', () => {
     const randomWord = hangman.selectRandomWord()
 
     expect(mockWordList).toContain(randomWord)
+  })
+
+  it('should not always return the first word in the wordlist', () => {
+    const hangman = new Hangman()
+
+    hangman.setWordList(mockWordList)
+
+    const result = []
+
+    for (let i = 0; i < 100; i++) {
+      result.push(hangman.selectRandomWord())
+    }
+
+    // Check if the result array contains more than one unique word to ensure that the method is selecting random words (from an array containing more than one word)
+    const uniqueWords = result.filter((value, index, self) => self.indexOf(value) === index)
+
+    expect(uniqueWords.length).toBeGreaterThan(1)
   })
 })
