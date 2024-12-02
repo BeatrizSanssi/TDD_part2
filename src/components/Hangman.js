@@ -35,6 +35,10 @@ export class Hangman {
 
     return this.#wordList[randomIndex]
   }
+
+  getWordLength(word) {
+    return 5
+  }
 }
 
 
