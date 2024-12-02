@@ -29,6 +29,10 @@ export class Hangman {
   checkGuess(letter, word) {
     return word.includes(letter)
   }
+
+  selectRandomWord() {
+    return this.#wordList[0]
+  }
 }
 
 

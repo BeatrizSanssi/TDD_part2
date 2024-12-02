@@ -70,4 +70,14 @@ describe('Hangman', () => {
     const hangman = new Hangman()
     expect(() => hangman.setWordList({ key: 'value' })).toThrowError('Word list must be an array')
   })
+
+  it('should select a random word from the wordlist', () => {
+    const hangman = new Hangman()
+
+    hangman.setWordList(mockWordList)
+
+    const randomWord = hangman.selectRandomWord()
+
+    expect(mockWordList).toContain(randomWord)
+  })
 })
