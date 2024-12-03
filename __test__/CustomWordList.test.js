@@ -22,4 +22,8 @@ describe('CustomWordList', () => {
   it('should throw an error if an empty wordlist is sent as an argument at instantiation', () => {
     expect(() => new CustomWordList([])).toThrowError('Wordlist cannot be empty')
   })
+
+  it('should throw a type error if a number is sent as an argument at instantiation', () => {
+    expect(() => new CustomWordList(123)).toThrowError('Wordlist must be an array')
+  })
 })
