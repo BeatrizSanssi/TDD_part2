@@ -12,6 +12,10 @@ export class CustomWordList {
       throw new Error('Wordlist is required')
     }
 
+    if (wordList.length === 0) {
+      throw new Error('Wordlist cannot be empty')
+    }
+
     this.#wordList = wordList
   }
 }
