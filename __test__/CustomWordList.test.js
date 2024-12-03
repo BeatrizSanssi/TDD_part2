@@ -42,4 +42,13 @@ describe('CustomWordList', () => {
     customWordList.addWord(newWord)
     expect(customWordList.getWordList()).toContain(newWord)
   })
+
+  it ('should select a random word from the newly created wordlist', () => {
+    const wordList = ['hangman', 'testing', 'jest']
+    const customWordList = new CustomWordList(wordList)
+    
+    customWordList.setWordList(wordList)
+    const randomWord = customWordList.selectRandomWord()
+    expect(wordList).toContain(randomWord)  
+  })
 })
