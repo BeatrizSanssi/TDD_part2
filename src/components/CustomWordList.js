@@ -6,4 +6,12 @@
  */
 export class CustomWordList {
   #wordList = []
+
+  constructor(wordList) {
+    if (wordList === undefined) {
+      throw new Error('Wordlist is required')
+    }
+
+    this.#wordList = wordList
+  }
 }
