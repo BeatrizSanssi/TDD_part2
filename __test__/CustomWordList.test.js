@@ -33,4 +33,13 @@ describe('CustomWordList', () => {
 
     expect(customWordList.getWordList()).toEqual(wordList)
   })
+
+  it ('should add a word to the wordlist', () => {
+    const wordList = ['hangman', 'testing', 'jest']
+    const customWordList = new CustomWordList(wordList)
+
+    const newWord = 'greetings'
+    customWordList.addWord(newWord)
+    expect(customWordList.getWordList()).toContain(newWord)
+  })
 })
