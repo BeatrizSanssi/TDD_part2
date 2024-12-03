@@ -15,7 +15,11 @@ describe('CustomWordList', () => {
     expect(customWordList).toBeDefined()
   })
 
-  it('should throw an error if there is no wordlist sent as a parameter at instantiation', () => {
+  it('should throw an error if there is no wordlist sent as an argument at instantiation', () => {
     expect(() => new CustomWordList()).toThrowError('Wordlist is required')
+  })
+
+  it('should throw an error if an empty wordlist is sent as an argument at instantiation', () => {
+    expect(() => new CustomWordList([])).toThrowError('Wordlist cannot be empty')
   })
 })
