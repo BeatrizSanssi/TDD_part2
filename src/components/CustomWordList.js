@@ -31,7 +31,8 @@ export class CustomWordList extends WordList {
   }
 
   addWord(word) {
-    const wordList = ['greetings']
+    const wordList = this.getWordList()
+    wordList.push(word)
     this.setWordList(wordList)
   }
 }
