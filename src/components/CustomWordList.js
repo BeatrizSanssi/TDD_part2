@@ -29,4 +29,9 @@ export class CustomWordList extends WordList {
 
     this.setWordList(wordList)
   }
+
+  addWord(word) {
+    const wordList = ['greetings']
+    this.setWordList(wordList)
+  }
 }
