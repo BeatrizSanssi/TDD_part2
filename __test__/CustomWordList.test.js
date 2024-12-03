@@ -38,7 +38,7 @@ describe('CustomWordList', () => {
     const wordList = ['hangman', 'testing', 'jest']
     const customWordList = new CustomWordList(wordList)
 
-    const newWord = 'greetings'
+    const newWord = 'hello'
     customWordList.addWord(newWord)
     expect(customWordList.getWordList()).toContain(newWord)
   })
