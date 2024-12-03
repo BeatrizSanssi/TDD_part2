@@ -4,7 +4,8 @@
  * @author Beatriz Sanssi <bs222eh@student.lnu.se>
  * @author Sabrina Prichard-Lybeck <sp223kz@student.lnu.se> 
  */
-export class CustomWordList {
+import { WordList } from './WordList.js'
+export class CustomWordList extends WordList {
   #wordList = []
 
   constructor(wordList) {
