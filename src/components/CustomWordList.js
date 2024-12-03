@@ -8,7 +8,13 @@ import { WordList } from './WordList.js'
 export class CustomWordList extends WordList {
   #wordList = []
 
+  /**
+   * 
+   * @param {Array} wordList 
+   */
   constructor(wordList) {
+    super(wordList)
+
     if (wordList === undefined) {
       throw new Error('Wordlist is required')
     }
@@ -21,6 +27,6 @@ export class CustomWordList extends WordList {
       throw new TypeError('Wordlist must be an array')
     }
 
-    this.#wordList = wordList
+    this.setWordList(wordList)
   }
 }
