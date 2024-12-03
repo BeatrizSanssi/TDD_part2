@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1733225254542" clover="3.2.0">
-  <project timestamp="1733225254542" name="All files">
-    <metrics statements="23" coveredstatements="22" conditionals="10" coveredconditionals="9" methods="9" coveredmethods="9" elements="42" coveredelements="40" complexity="0" loc="23" ncloc="23" packages="1" files="4" classes="4"/>
+<coverage generated="1733225365478" clover="3.2.0">
+  <project timestamp="1733225365478" name="All files">
+    <metrics statements="25" coveredstatements="24" conditionals="12" coveredconditionals="11" methods="9" coveredmethods="9" elements="46" coveredelements="44" complexity="0" loc="25" ncloc="25" packages="1" files="4" classes="4"/>
     <file name="CustomWordList.js" path="C:\Users\sabri\Mappar\Computer Science\testing\TDD_part2\src\components\CustomWordList.js">
-      <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
       <line num="8" count="4" type="stmt"/>
       <line num="11" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="12" count="1" type="stmt"/>
       <line num="15" count="3" type="cond" truecount="2" falsecount="0"/>
       <line num="16" count="1" type="stmt"/>
-      <line num="19" count="2" type="stmt"/>
+      <line num="19" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
     </file>
     <file name="HangmanOrchestrator.js" path="C:\Users\sabri\Mappar\Computer Science\testing\TDD_part2\src\components\HangmanOrchestrator.js">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>

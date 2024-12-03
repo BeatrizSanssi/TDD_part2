@@ -16,6 +16,10 @@ export class CustomWordList {
       throw new Error('Wordlist cannot be empty')
     }
 
+    if (!Array.isArray(wordList)) {
+      throw new TypeError('Wordlist must be an array')
+    }
+
     this.#wordList = wordList
   }
 }
