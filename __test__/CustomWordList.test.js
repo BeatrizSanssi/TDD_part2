@@ -26,4 +26,11 @@ describe('CustomWordList', () => {
   it('should throw a type error if a number is sent as an argument at instantiation', () => {
     expect(() => new CustomWordList(123)).toThrowError('Wordlist must be an array')
   })
+
+  it('should return the wordlist', () => {
+    const wordList = ['hangman', 'testing', 'jest']
+    const customWordList = new CustomWordList(wordList)
+
+    expect(customWordList.getWordList()).toEqual(wordList)
+  })
 })
