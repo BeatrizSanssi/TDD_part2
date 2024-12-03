@@ -9,7 +9,8 @@ import { CustomWordList } from '../src/components/CustomWordList.js'
 
 describe('CustomWordList', () => {
   it('should create an instance of custom word list', () => {
-    const customWordList = new CustomWordList()
+    const wordList = ['hangman', 'testing', 'jest']
+    const customWordList = new CustomWordList(wordList)
 
     expect(customWordList).toBeDefined()
   })
