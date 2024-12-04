@@ -28,4 +28,12 @@ describe('HangmanOrchestrator', () => {
 
     expect(word).toBeDefined()
   })
+
+  it('should check the guessed letter', () => {
+    const hangman = new HangmanOrchestrator()
+    const word = 'hangman'
+    const guessedLetter = 'h'
+
+    expect(hangman.checkGuess(guessedLetter, word)).toBe(true)
+  })
 })

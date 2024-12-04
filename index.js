@@ -22,7 +22,7 @@ let wrongGuesses = 0
 onePlayerBtn.addEventListener('click', () => {
   welcomeScreen.classList.add('hidden')
   onePlayerContainer.classList.remove('hidden')
-  // selectedWord = orchestrator.#wordList.selectRandomWord()
+  selectedWord = orchestrator.getRandomWord()
   guessedWord = Array(selectedWord.length).fill('_')
   updateWordDisplay()
 })
@@ -39,7 +39,7 @@ addWordBtn.addEventListener('click', () => {
   if (word) {
     orchestrator.addCustomWord(word)
     wordInput.value = ''
-    // addedWordsMessage.textContent = `Added words: ${orchestrator.#addedWords.join(', ')}`
+    addedWordsMessage.textContent = `Added words: ${orchestrator.addCustomWord(word).join(', ')}`
     startGameBtn.classList.remove('hidden')
   }
 })
