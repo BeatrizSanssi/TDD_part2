@@ -30,6 +30,10 @@ export class HangmanOrchestrator {
 
     return randomWord
   }
+
+  checkGuess(letter, word) {
+    return this.#wordGuesser.checkGuess(letter, word)
+  }
 }
 
 
