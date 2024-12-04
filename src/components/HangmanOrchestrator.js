@@ -12,10 +12,16 @@ export class HangmanOrchestrator {
   #wordList
   #wordGuesser
   #CustomWordList
+  #addedWords = []
 
   constructor() {
     this.#wordList = new WordList()
     this.#wordGuesser = new WordGuesser()
+  }
+
+  addCustomWord(word) {
+    this.#addedWords.push(word)
+    return this.#addedWords
   }
 }
 

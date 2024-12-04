@@ -16,8 +16,9 @@ describe('HangmanOrchestrator', () => {
 
   it('should let the user create a custom word list', () => {
     const hangman = new HangmanOrchestrator()
-    const customWordList = hangman.addCustomWord()
+    const word = 'hangman'
+    const customWordList = hangman.addCustomWord(word)
 
-    expect(customWordList).toBeDefined()
+    expect(customWordList).toContain(word)
   })
 })
