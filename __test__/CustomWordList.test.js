@@ -43,6 +43,15 @@ describe('CustomWordList', () => {
     expect(customWordList.getWordList()).toContain(newWord)
   })
 
+  it('should remove a word from the wordlist', () => {
+    const wordList = ['hangman', 'testing', 'jest']
+    const customWordList = new CustomWordList(wordList)
+
+    const wordToRemove = 'testing'
+    customWordList.removeWord(wordToRemove)
+    expect(customWordList.getWordList()).not.toContain(wordToRemove)
+  })
+
   it ('should select a random word from the newly created wordlist', () => {
     const wordList = ['hangman', 'testing', 'jest']
     const customWordList = new CustomWordList(wordList)
