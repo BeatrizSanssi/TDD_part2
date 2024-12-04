@@ -65,19 +65,19 @@ submitGuess.addEventListener('click', () => {
   const letter = guessInput.value.toLowerCase()
   guessInput.value = ''
 
-  // if (orchestrator.#wordGuesser.checkGuess(letter, selectedWord)) {
-  //   for (let i = 0; i < selectedWord.length; i++) {
-  //     if (selectedWord[i] === letter) {
-  //       guessedWord[i] = letter
-  //     }
-  //   }
-  // } else {
-  //   wrongGuesses++
-  //   if (wrongGuesses >= 6) {
-  //     message.textContent = `Game Over! The word was "${selectedWord}"`
-  //     disableInputs()
-  //   }
-  // }
+  if (orchestrator.checkGuess(letter, selectedWord)) {
+    for (let i = 0; i < selectedWord.length; i++) {
+      if (selectedWord[i] === letter) {
+        guessedWord[i] = letter
+      }
+    }
+  } else {
+    wrongGuesses++
+    if (wrongGuesses >= 6) {
+      message.textContent = `Game Over! The word was "${selectedWord}"`
+      disableInputs()
+    }
+  }
 
   updateWordDisplay()
 

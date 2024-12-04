@@ -36,4 +36,12 @@ describe('HangmanOrchestrator', () => {
 
     expect(hangman.checkGuess(guessedLetter, word)).toBe(true)
   })
+
+  it('should only display the added word once', () => {
+    const hangman = new HangmanOrchestrator()
+    const word = 'hangman'
+    hangman.addCustomWord(word)
+
+    expect(hangman.addCustomWord(word)).toEqual([word])
+  })
 })
