@@ -14,6 +14,10 @@ const addWordBtn = document.getElementById('add-word-btn')
 const startGameBtn = document.getElementById('start-game-btn')
 const addedWordsMessage = document.getElementById('added-words-message')
 
+const guessInput = document.getElementById('guess-input')
+const submitGuess = document.getElementById('submit-guess')
+const message = document.getElementById('message')
+
 let selectedWord
 let guessedWord = []
 let wrongGuesses = 0
@@ -63,6 +67,7 @@ function updateWordDisplay() {
 
 // Handle guess
 submitGuess.addEventListener('click', () => {
+  console.log('Guess button clicked')
   const letter = guessInput.value.toLowerCase()
   guessInput.value = ''
 
@@ -98,6 +103,3 @@ function disableInputs() {
 // let selectedWord = wordList.selectRandomWord()
 
 // const wordPlaceholder = document.getElementById('word-placeholder')
-// const guessInput = document.getElementById('guess-input')
-// const submitGuess = document.getElementById('submit-guess')
-// const message = document.getElementById('message')
