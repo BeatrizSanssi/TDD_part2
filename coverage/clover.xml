@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1733313848948" clover="3.2.0">
-  <project timestamp="1733313848948" name="All files">
-    <metrics statements="37" coveredstatements="36" conditionals="12" coveredconditionals="11" methods="13" coveredmethods="13" elements="62" coveredelements="60" complexity="0" loc="37" ncloc="37" packages="1" files="4" classes="4"/>
+<coverage generated="1733315194186" clover="3.2.0">
+  <project timestamp="1733315194186" name="All files">
+    <metrics statements="39" coveredstatements="38" conditionals="14" coveredconditionals="13" methods="14" coveredmethods="14" elements="67" coveredelements="65" complexity="0" loc="39" ncloc="39" packages="1" files="4" classes="4"/>
     <file name="CustomWordList.js" path="/Users/beasanssi/1dv609/TDD_part2/src/components/CustomWordList.js">
       <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
       <line num="9" count="8" type="stmt"/>
@@ -21,16 +21,18 @@
       <line num="50" count="1" type="stmt"/>
     </file>
     <file name="HangmanOrchestrator.js" path="/Users/beasanssi/1dv609/TDD_part2/src/components/HangmanOrchestrator.js">
-      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
       <line num="15" count="6" type="stmt"/>
       <line num="18" count="6" type="stmt"/>
       <line num="19" count="6" type="stmt"/>
-      <line num="23" count="4" type="stmt"/>
-      <line num="24" count="4" type="stmt"/>
-      <line num="28" count="1" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
-      <line num="31" count="1" type="stmt"/>
+      <line num="23" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="3" type="stmt"/>
+      <line num="26" count="4" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
       <line num="35" count="1" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
     </file>
     <file name="WordGuesser.js" path="/Users/beasanssi/1dv609/TDD_part2/src/components/WordGuesser.js">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

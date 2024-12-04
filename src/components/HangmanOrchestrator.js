@@ -20,7 +20,13 @@ export class HangmanOrchestrator {
   }
 
   addCustomWord(word) {
-    this.#addedWords.push(word)
+    if (!this.#addedWords.includes(word)) {
+      this.#addedWords.push(word)
+    }
+    return this.#addedWords
+  }
+
+  getAddedWords() {
     return this.#addedWords
   }
 

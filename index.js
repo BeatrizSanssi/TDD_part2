@@ -39,7 +39,7 @@ addWordBtn.addEventListener('click', () => {
   if (word) {
     orchestrator.addCustomWord(word)
     wordInput.value = ''
-    addedWordsMessage.textContent = `Added words: ${orchestrator.addCustomWord(word).join(', ')}`
+    addedWordsMessage.textContent = `Added words: ${orchestrator.getAddedWords(word).join(', ')}`
 
     startGameBtn.classList.remove('hidden')
   }
