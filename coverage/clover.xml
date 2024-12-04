@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1733312209684" clover="3.2.0">
-  <project timestamp="1733312209684" name="All files">
-    <metrics statements="33" coveredstatements="32" conditionals="12" coveredconditionals="11" methods="11" coveredmethods="11" elements="56" coveredelements="54" complexity="0" loc="33" ncloc="33" packages="1" files="4" classes="4"/>
+<coverage generated="1733312450332" clover="3.2.0">
+  <project timestamp="1733312450332" name="All files">
+    <metrics statements="36" coveredstatements="35" conditionals="12" coveredconditionals="11" methods="12" coveredmethods="12" elements="60" coveredelements="58" complexity="0" loc="36" ncloc="36" packages="1" files="4" classes="4"/>
     <file name="CustomWordList.js" path="/Users/beasanssi/1dv609/TDD_part2/src/components/CustomWordList.js">
       <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
       <line num="9" count="8" type="stmt"/>
@@ -21,12 +21,15 @@
       <line num="50" count="1" type="stmt"/>
     </file>
     <file name="HangmanOrchestrator.js" path="/Users/beasanssi/1dv609/TDD_part2/src/components/HangmanOrchestrator.js">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <line num="15" count="3" type="stmt"/>
       <line num="18" count="3" type="stmt"/>
       <line num="19" count="3" type="stmt"/>
       <line num="23" count="1" type="stmt"/>
       <line num="24" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
     </file>
     <file name="WordGuesser.js" path="/Users/beasanssi/1dv609/TDD_part2/src/components/WordGuesser.js">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -40,12 +43,12 @@
       <line num="15" count="16" type="cond" truecount="2" falsecount="0"/>
       <line num="16" count="3" type="stmt"/>
       <line num="19" count="13" type="stmt"/>
-      <line num="23" count="7" type="cond" truecount="1" falsecount="1"/>
+      <line num="23" count="8" type="cond" truecount="1" falsecount="1"/>
       <line num="24" count="0" type="stmt"/>
-      <line num="27" count="7" type="stmt"/>
+      <line num="27" count="8" type="stmt"/>
       <line num="31" count="1" type="stmt"/>
-      <line num="35" count="103" type="stmt"/>
-      <line num="37" count="103" type="stmt"/>
+      <line num="35" count="104" type="stmt"/>
+      <line num="37" count="104" type="stmt"/>
     </file>
   </project>
 </coverage>

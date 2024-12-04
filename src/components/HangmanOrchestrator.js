@@ -23,6 +23,13 @@ export class HangmanOrchestrator {
     this.#addedWords.push(word)
     return this.#addedWords
   }
+
+  getRandomWord() {
+    const wordList = this.#wordList.getWordList()
+    const randomWord = this.#wordList.selectRandomWord(wordList)
+
+    return randomWord
+  }
 }
 
 
