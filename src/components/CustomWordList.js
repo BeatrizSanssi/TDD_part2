@@ -46,11 +46,7 @@ export class CustomWordList extends WordList {
    */
   removeWord(wordToBeRemoved) {
     const wordList = this.getWordList()
-
-    wordList.forEach((word) => {
-      if (word === wordToBeRemoved) {
-        wordList.splice(word, 1)
-      }
-    })
+    const updatedList = wordList.filter(word => word !== wordToBeRemoved)
+    this.setWordList(updatedList)
   }
 }

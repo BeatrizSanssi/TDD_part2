@@ -7,6 +7,9 @@
  */
 import { CustomWordList } from '../src/components/CustomWordList.js'
 
+const mockEmptyWordList = []
+const mockWordList = ['encyclopedia', 'hangman', 'javascript', 'programming', 'technology', 'university', 'software', 'developer', 'computer', 'science', 'testing', 'doctor', 'hospital', 'flamingo', 'bronchitis', 'scarlet', 'rainbow', 'mercedes', 'word', 'student', 'proficient', 'intelligence', 'orangutang', 'cheese', 'flamboyant', 'fun', 'psychiatric', 'xylophone', 'green', 'garden', 'flowers', 'firehydrant', 'water', 'microphone', 'plastic', 'forest', 'instrument', 'politician', 'environment']
+
 describe('CustomWordList', () => {
   it('should create an instance of custom word list', () => {
     const wordList = ['hangman', 'testing', 'jest']
@@ -20,7 +23,7 @@ describe('CustomWordList', () => {
   })
 
   it('should throw an error if an empty wordlist is sent as an argument at instantiation', () => {
-    expect(() => new CustomWordList([])).toThrowError('Wordlist cannot be empty')
+    expect(() => new CustomWordList(mockEmptyWordList)).toThrowError('Wordlist cannot be empty')
   })
 
   it('should throw a type error if a number is sent as an argument at instantiation', () => {
@@ -28,15 +31,14 @@ describe('CustomWordList', () => {
   })
 
   it('should return the wordlist', () => {
-    const wordList = ['hangman', 'testing', 'jest']
-    const customWordList = new CustomWordList(wordList)
+    const customWordList = new CustomWordList(mockWordList)
+    customWordList.setWordList(mockWordList)
 
-    expect(customWordList.getWordList()).toEqual(wordList)
+    expect(customWordList.getWordList()).toEqual(mockWordList)
   })
 
   it ('should add a word to the wordlist', () => {
-    const wordList = ['hangman', 'testing', 'jest']
-    const customWordList = new CustomWordList(wordList)
+    const customWordList = new CustomWordList(mockWordList)
 
     const newWord = 'hello'
     customWordList.addWord(newWord)
@@ -44,21 +46,19 @@ describe('CustomWordList', () => {
   })
 
   it('should remove a word from the wordlist', () => {
-    const wordList = ['hangman', 'testing', 'jest']
-    const customWordList = new CustomWordList(wordList)
-    const randomIndex = Math.floor(Math.random() * wordList.length)
-    const randomWordToRemove = wordList[randomIndex]
+    const customWordList = new CustomWordList(mockWordList)
+    const randomIndex = Math.floor(Math.random() * mockWordList.length)
+    const randomWordToRemove = mockWordList[randomIndex]
 
     customWordList.removeWord(randomWordToRemove)
     expect(customWordList.getWordList()).not.toContain(randomWordToRemove)
   })
 
   it ('should select a random word from the newly created wordlist', () => {
-    const wordList = ['hangman', 'testing', 'jest']
-    const customWordList = new CustomWordList(wordList)
+    const customWordList = new CustomWordList(mockWordList)
     
-    customWordList.setWordList(wordList)
+    customWordList.setWordList(mockWordList)
     const randomWord = customWordList.selectRandomWord()
-    expect(wordList).toContain(randomWord)  
+    expect(mockWordList).toContain(randomWord)  
   })
 })
