@@ -6,20 +6,16 @@
  */
 import { WordList } from './WordList.js'
 import { WordGuesser } from './WordGuesser.js'
+import { CustomWordList } from './CustomWordList.js'
+
 export class HangmanOrchestrator {
   #wordList
   #wordGuesser
+  #CustomWordList
 
   constructor() {
     this.#wordList = new WordList()
     this.#wordGuesser = new WordGuesser()
-  }
-  getWordList() {
-    return this.#wordGuesser
-  }
-
-  getWordGuesser() {
-    return this.#wordGuesser
   }
 }
 

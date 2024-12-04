@@ -14,15 +14,10 @@ describe('HangmanOrchestrator', () => {
     expect(hangman).toBeDefined()
   })
 
-  it ('should create an instance of WordList', () => {
+  it('should let the user create a custom word list', () => {
     const hangman = new HangmanOrchestrator()
+    const customWordList = hangman.addCustomWord()
 
-    expect(hangman.getWordList()).toBeDefined() 
-  })
-
-  it ('should create an instance of WordGuesser', () => {
-    const hangman = new HangmanOrchestrator()
-
-    expect(hangman.getWordGuesser()).toBeDefined() 
+    expect(customWordList).toBeDefined()
   })
 })
