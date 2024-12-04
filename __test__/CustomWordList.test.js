@@ -46,10 +46,11 @@ describe('CustomWordList', () => {
   it('should remove a word from the wordlist', () => {
     const wordList = ['hangman', 'testing', 'jest']
     const customWordList = new CustomWordList(wordList)
+    const randomIndex = Math.floor(Math.random() * wordList.length)
+    const randomWordToRemove = wordList[randomIndex]
 
-    const wordToRemove = 'testing'
-    customWordList.removeWord(wordToRemove)
-    expect(customWordList.getWordList()).not.toContain(wordToRemove)
+    customWordList.removeWord(randomWordToRemove)
+    expect(customWordList.getWordList()).not.toContain(randomWordToRemove)
   })
 
   it ('should select a random word from the newly created wordlist', () => {
