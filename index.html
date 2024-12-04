@@ -8,12 +8,27 @@
 </head>
 <body>
   <h1>Hangman Game</h1>
-  <div id="game-container">
+  <div id="welcome-screen">
+    <p>Welcome to the game Hangman! Please choose a game for one or two players:</p>
+    <button id="one-player-btn">One Player</button>
+    <button id="two-player-btn">Two Players</button>
+  </div>
+
+  <div id="one-player-container" class="hidden">
     <p id="word-placeholder" class="hidden-word"></p>
     <input type="text" id="guess-input" maxlength="1" placeholder="Enter a letter" />
     <button id="submit-guess">Guess</button>
     <p id="message" class="message"></p>
   </div>
+
+  <div id="two-player-container" class="hidden">
+    <p>Add words for the custom word list:</p>
+    <input type="text" id="word-input" placeholder="Enter a word" />
+    <button id="add-word-btn">Add Word</button>
+    <button id="start-game-btn" class="hidden">Start Game</button>
+    <p id="added-words-message"></p>
+  </div>
+  
   <script type="module" src="./index.js"></script>
 </body>
 </html>

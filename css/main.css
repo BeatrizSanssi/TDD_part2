@@ -9,7 +9,17 @@ body {
   letter-spacing: 1.5rem;
   margin: 20px 0;
 }
+
+.hidden {
+  display: none;
+}
+
+#game-container {
+  margin: 20px;
+}
+
 .message {
   margin-top: 10px;
   color: red;
+  font-weight: bold;
 }

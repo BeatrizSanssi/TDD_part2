@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1733311086383" clover="3.2.0">
-  <project timestamp="1733311086383" name="All files">
+<coverage generated="1733312209684" clover="3.2.0">
+  <project timestamp="1733312209684" name="All files">
     <metrics statements="33" coveredstatements="32" conditionals="12" coveredconditionals="11" methods="11" coveredmethods="11" elements="56" coveredelements="54" complexity="0" loc="33" ncloc="33" packages="1" files="4" classes="4"/>
     <file name="CustomWordList.js" path="/Users/beasanssi/1dv609/TDD_part2/src/components/CustomWordList.js">
       <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
@@ -22,9 +22,9 @@
     </file>
     <file name="HangmanOrchestrator.js" path="/Users/beasanssi/1dv609/TDD_part2/src/components/HangmanOrchestrator.js">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="15" count="2" type="stmt"/>
-      <line num="18" count="2" type="stmt"/>
-      <line num="19" count="2" type="stmt"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="19" count="3" type="stmt"/>
       <line num="23" count="1" type="stmt"/>
       <line num="24" count="1" type="stmt"/>
     </file>
@@ -34,7 +34,7 @@
     </file>
     <file name="WordList.js" path="/Users/beasanssi/1dv609/TDD_part2/src/components/WordList.js">
       <metrics statements="12" coveredstatements="11" conditionals="6" coveredconditionals="5" methods="4" coveredmethods="4"/>
-      <line num="8" count="19" type="stmt"/>
+      <line num="8" count="20" type="stmt"/>
       <line num="11" count="17" type="cond" truecount="2" falsecount="0"/>
       <line num="12" count="1" type="stmt"/>
       <line num="15" count="16" type="cond" truecount="2" falsecount="0"/>
