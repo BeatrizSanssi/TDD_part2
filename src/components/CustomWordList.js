@@ -45,7 +45,12 @@ export class CustomWordList extends WordList {
    * @param {String} wordToBeRemoved 
    */
   removeWord(wordToBeRemoved) {
-    const wordList = ['hangman', 'jest']
-    this.setWordList(wordList)
+    const wordList = this.getWordList()
+
+    wordList.forEach((word) => {
+      if (word === wordToBeRemoved) {
+        wordList.splice(word, 1)
+      }
+    })
   }
 }
