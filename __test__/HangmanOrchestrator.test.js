@@ -22,6 +22,14 @@ describe('HangmanOrchestrator', () => {
     expect(customWordList).toContain(word)
   })
 
+  it('should get the list of added words', () => {
+    const hangman = new HangmanOrchestrator()
+    const word = 'hangman'
+    hangman.addCustomWord(word)
+ 
+    expect(hangman.getAddedWords()).toContain(word)
+  })
+
   it('should get a random word from the word list', () => {
     const hangman = new HangmanOrchestrator()
     const word = hangman.getRandomWord()

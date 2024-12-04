@@ -40,6 +40,7 @@ addWordBtn.addEventListener('click', () => {
     orchestrator.addCustomWord(word)
     wordInput.value = ''
     addedWordsMessage.textContent = `Added words: ${orchestrator.addCustomWord(word).join(', ')}`
+
     startGameBtn.classList.remove('hidden')
   }
 })
