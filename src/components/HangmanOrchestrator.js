@@ -30,6 +30,14 @@ export class HangmanOrchestrator {
     return this.#addedWords
   }
 
+  chooseWordList(customWordList) {
+    if (customWordList) {
+      return this.#addedWords
+    } else {
+      return this.#wordList.getWordList()
+    }
+  }
+
   getRandomWord() {
     const wordList = this.#wordList.getWordList()
     const randomWord = this.#wordList.selectRandomWord(wordList)
