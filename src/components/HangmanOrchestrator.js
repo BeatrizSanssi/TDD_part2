@@ -11,7 +11,7 @@ import { CustomWordList } from './CustomWordList.js'
 export class HangmanOrchestrator {
   #wordList
   #wordGuesser
-  #CustomWordList
+  #customWordList
   #addedWords = []
 
   constructor() {
@@ -32,7 +32,8 @@ export class HangmanOrchestrator {
 
   chooseWordList(customWordList) {
     if (customWordList) {
-      return this.#wordList.getWordList()
+      this.#customWordList = new CustomWordList(this.#addedWords)
+      return this.#customWordList.getWordList()
     } else {
       return this.#wordList.getWordList()
     }
