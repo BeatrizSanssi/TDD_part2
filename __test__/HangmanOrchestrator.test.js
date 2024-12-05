@@ -7,6 +7,8 @@
  */
 import { HangmanOrchestrator } from '../src/components/HangmanOrchestrator.js'
 
+const mockWordList = ['encyclopedia', 'hangman', 'javascript', 'programming', 'technology', 'university', 'software', 'developer', 'computer', 'science', 'testing', 'doctor', 'hospital', 'flamingo', 'bronchitis', 'scarlet', 'rainbow', 'mercedes', 'word', 'student', 'proficient', 'intelligence', 'orangutang', 'cheese', 'flamboyant', 'fun', 'psychiatric', 'xylophone', 'green', 'garden', 'flowers', 'firehydrant', 'water', 'microphone', 'plastic', 'forest', 'instrument', 'politician', 'environment']
+
 describe('HangmanOrchestrator', () => {
   it('should create an instance of Hangman', () => {
     const hangman = new HangmanOrchestrator()
@@ -28,6 +30,14 @@ describe('HangmanOrchestrator', () => {
     hangman.addCustomWord(word)
  
     expect(hangman.getAddedWords()).toContain(word)
+  })
+
+  it('should use the correct word list, depending on if user chooses single game play or two players', () => {
+    const hangman = new HangmanOrchestrator()
+    const customWordList = false
+    const wordList = hangman.chooseWordList(customWordList)
+
+    expect(wordList).toEqual(mockWordList)
   })
 
   it('should get a random word from the word list', () => {
