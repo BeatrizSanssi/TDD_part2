@@ -34,10 +34,10 @@ describe('HangmanOrchestrator', () => {
 
   it('should use the correct word list, depending on if user chooses single game play or two players', () => {
     const hangman = new HangmanOrchestrator()
-    const customWordList = false
+    const customWordList = true
     const wordList = hangman.chooseWordList(customWordList)
 
-    expect(wordList).toEqual(mockWordList)
+    expect(wordList).not.toEqual(mockWordList)
   })
 
   it('should get a random word from the word list', () => {

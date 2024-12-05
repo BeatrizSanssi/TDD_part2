@@ -32,7 +32,7 @@ export class HangmanOrchestrator {
 
   chooseWordList(customWordList) {
     if (customWordList) {
-      return this.#addedWords
+      return this.#wordList.getWordList()
     } else {
       return this.#wordList.getWordList()
     }
