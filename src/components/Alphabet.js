@@ -16,10 +16,18 @@ export class Alphabet {
    * @param {String} word
    */
     disableGuessedLetter(guessedLetter) {
-      this.#alphabet.map((letter, index) => {
+      this.#alphabet.forEach((letter, index) => {
         if (letter === guessedLetter) {
           this.#alphabet.splice(index, 1)
         }
       })
+
+      const letterDisabledEvent = new CustomEvent('letterDisabled', {
+        detail: {
+          letter: guessedLetter
+        }
+      })
+
+      document.dispatchEvent(letterDisabledEvent)
     }
 }
