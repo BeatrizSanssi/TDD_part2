@@ -5,4 +5,14 @@ describe('Alphabet', () => {
     const alphabet = new Alphabet()
     expect(alphabet).toBeDefined()
   })
+
+  it('should disable guessed letter from the alphabet array', () => {
+    const alphabet = new Alphabet()
+    const guessedLetter = 'h'
+
+    alphabet.disableGuessedLetter(guessedLetter)
+    const updatedAlphabet = alphabet.getAlphabet()
+
+    expect(updatedAlphabet).not.toContain(guessedLetter)
+  })
 })

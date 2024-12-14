@@ -24,7 +24,7 @@ export class WordList {
       throw new Error('No words in wordlist')
     }
 
-    return this.#wordList
+    return [...this.#wordList]
   }
 
   getWordLength(word) {

@@ -49,15 +49,4 @@ export class CustomWordList extends WordList {
     const updatedList = wordList.filter(word => word !== wordToBeRemoved)
     this.setWordList(updatedList)
   }
-
-  /**
-   * 
-   * @param {String} word
-   */
-  disableGuessedLetter(guessedLetter) {
-    const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-    const updatedAlphabet = alphabet.filter(letter => letter !== guessedLetter)
-
-    return updatedAlphabet
-  }
 }
