@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1734184745791" clover="3.2.0">
-  <project timestamp="1734184745791" name="All files">
-    <metrics statements="55" coveredstatements="53" conditionals="18" coveredconditionals="16" methods="18" coveredmethods="18" elements="91" coveredelements="87" complexity="0" loc="55" ncloc="55" packages="1" files="5" classes="5"/>
+<coverage generated="1734184908181" clover="3.2.0">
+  <project timestamp="1734184908181" name="All files">
+    <metrics statements="58" coveredstatements="56" conditionals="18" coveredconditionals="16" methods="19" coveredmethods="19" elements="95" coveredelements="91" complexity="0" loc="58" ncloc="58" packages="1" files="5" classes="5"/>
     <file name="Alphabet.js" path="/Users/beasanssi/Desktop/Skola HT24- VT25/TDD_part2/src/components/Alphabet.js">
-      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
       <line num="8" count="4" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="15" count="3" type="stmt"/>
-      <line num="23" count="3" type="stmt"/>
-      <line num="24" count="75" type="cond" truecount="2" falsecount="0"/>
-      <line num="25" count="3" type="stmt"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="21" count="3" type="stmt"/>
       <line num="29" count="3" type="stmt"/>
+      <line num="30" count="75" type="cond" truecount="2" falsecount="0"/>
+      <line num="31" count="3" type="stmt"/>
       <line num="35" count="3" type="stmt"/>
+      <line num="41" count="3" type="stmt"/>
+      <line num="42" count="3" type="stmt"/>
     </file>
     <file name="CustomWordList.js" path="/Users/beasanssi/Desktop/Skola HT24- VT25/TDD_part2/src/components/CustomWordList.js">
       <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
