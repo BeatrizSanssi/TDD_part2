@@ -17,6 +17,16 @@ describe('Alphabet', () => {
     expect(updatedAlphabet).not.toContain(guessedLetter)
   })
 
+  it('should add the guessed letter to the disabled letters array', () => {
+    const alphabet = new Alphabet()
+    const guessedLetter = 'h'
+
+    alphabet.handleDisableGuessedLetter(guessedLetter)
+    const disabledLetters = alphabet.getDisabledLetters()
+
+    expect(disabledLetters).toContain(guessedLetter)
+  })
+
   it('should emit an event when a letter is disabled', () => {
     const mockListener = jest.fn()
     const alphabet = new Alphabet()

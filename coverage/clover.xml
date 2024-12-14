@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1734183063795" clover="3.2.0">
-  <project timestamp="1734183063795" name="All files">
+<coverage generated="1734184745791" clover="3.2.0">
+  <project timestamp="1734184745791" name="All files">
     <metrics statements="55" coveredstatements="53" conditionals="18" coveredconditionals="16" methods="18" coveredmethods="18" elements="91" coveredelements="87" complexity="0" loc="55" ncloc="55" packages="1" files="5" classes="5"/>
-    <file name="Alphabet.js" path="C:\Users\sabri\Mappar\Computer Science\testing\TDD_part2\src\components\Alphabet.js">
+    <file name="Alphabet.js" path="/Users/beasanssi/Desktop/Skola HT24- VT25/TDD_part2/src/components/Alphabet.js">
       <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-      <line num="8" count="3" type="stmt"/>
+      <line num="8" count="4" type="stmt"/>
       <line num="11" count="1" type="stmt"/>
-      <line num="15" count="2" type="stmt"/>
-      <line num="23" count="2" type="stmt"/>
-      <line num="24" count="50" type="cond" truecount="2" falsecount="0"/>
-      <line num="25" count="2" type="stmt"/>
-      <line num="29" count="2" type="stmt"/>
-      <line num="35" count="2" type="stmt"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="23" count="3" type="stmt"/>
+      <line num="24" count="75" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="3" type="stmt"/>
+      <line num="29" count="3" type="stmt"/>
+      <line num="35" count="3" type="stmt"/>
     </file>
-    <file name="CustomWordList.js" path="C:\Users\sabri\Mappar\Computer Science\testing\TDD_part2\src\components\CustomWordList.js">
+    <file name="CustomWordList.js" path="/Users/beasanssi/Desktop/Skola HT24- VT25/TDD_part2/src/components/CustomWordList.js">
       <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
       <line num="9" count="9" type="stmt"/>
       <line num="16" count="9" type="stmt"/>
@@ -33,7 +33,7 @@
       <line num="57" count="39" type="stmt"/>
       <line num="58" count="1" type="stmt"/>
     </file>
-    <file name="HangmanOrchestrator.js" path="C:\Users\sabri\Mappar\Computer Science\testing\TDD_part2\src\components\HangmanOrchestrator.js">
+    <file name="HangmanOrchestrator.js" path="/Users/beasanssi/Desktop/Skola HT24- VT25/TDD_part2/src/components/HangmanOrchestrator.js">
       <metrics statements="17" coveredstatements="16" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="6"/>
       <line num="15" count="7" type="stmt"/>
       <line num="18" count="7" type="stmt"/>
@@ -53,11 +53,11 @@
       <line num="54" count="1" type="stmt"/>
       <line num="58" count="1" type="stmt"/>
     </file>
-    <file name="WordGuesser.js" path="C:\Users\sabri\Mappar\Computer Science\testing\TDD_part2\src\components\WordGuesser.js">
+    <file name="WordGuesser.js" path="/Users/beasanssi/Desktop/Skola HT24- VT25/TDD_part2/src/components/WordGuesser.js">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="9" count="3" type="stmt"/>
     </file>
-    <file name="WordList.js" path="C:\Users\sabri\Mappar\Computer Science\testing\TDD_part2\src\components\WordList.js">
+    <file name="WordList.js" path="/Users/beasanssi/Desktop/Skola HT24- VT25/TDD_part2/src/components/WordList.js">
       <metrics statements="12" coveredstatements="11" conditionals="6" coveredconditionals="5" methods="4" coveredmethods="4"/>
       <line num="8" count="25" type="stmt"/>
       <line num="11" count="18" type="cond" truecount="2" falsecount="0"/>
