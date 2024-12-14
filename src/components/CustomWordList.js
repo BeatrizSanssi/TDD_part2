@@ -30,21 +30,29 @@ export class CustomWordList extends WordList {
     this.setWordList(wordList)
   }
 
+  handleAddWord(word) {
+    this.#addWord(word)
+  }
+
   /**
    * 
    * @param {String} word 
    */
-  addWord(word) {
+  #addWord(word) {
     const wordList = this.getWordList()
     wordList.push(word)
     this.setWordList(wordList)
+  }
+
+  handleRemoveWord(word) {
+    this.#removeWord(word)
   }
 
   /**
    * 
    * @param {String} wordToBeRemoved 
    */
-  removeWord(wordToBeRemoved) {
+  #removeWord(wordToBeRemoved) {
     const wordList = this.getWordList()
     const updatedList = wordList.filter(word => word !== wordToBeRemoved)
     this.setWordList(updatedList)

@@ -11,11 +11,15 @@ export class Alphabet {
     return [...this.#alphabet]
   }
 
+  handleDisableGuessedLetter(guessedLetter) {
+    this.#disableGuessedLetter(guessedLetter)
+  }
+
   /**
    * 
    * @param {String} word
    */
-    disableGuessedLetter(guessedLetter) {
+    #disableGuessedLetter(guessedLetter) {
       this.#alphabet.forEach((letter, index) => {
         if (letter === guessedLetter) {
           this.#alphabet.splice(index, 1)

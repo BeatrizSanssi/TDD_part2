@@ -41,7 +41,7 @@ describe('CustomWordList', () => {
     const customWordList = new CustomWordList(mockWordList)
 
     const newWord = 'hello'
-    customWordList.addWord(newWord)
+    customWordList.handleAddWord(newWord)
     expect(customWordList.getWordList()).toContain(newWord)
   })
 
@@ -50,7 +50,7 @@ describe('CustomWordList', () => {
     const randomIndex = Math.floor(Math.random() * mockWordList.length)
     const randomWordToRemove = mockWordList[randomIndex]
 
-    customWordList.removeWord(randomWordToRemove)
+    customWordList.handleRemoveWord(randomWordToRemove)
     expect(customWordList.getWordList()).not.toContain(randomWordToRemove)
   })
 

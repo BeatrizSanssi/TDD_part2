@@ -41,7 +41,7 @@ twoPlayerBtn.addEventListener('click', () => {
 addWordBtn.addEventListener('click', () => {
   const word = wordInput.value.trim()
   if (word) {
-    orchestrator.addCustomWord(word)
+    orchestrator.handleAddCustomWord(word)
     wordInput.value = ''
     addedWordsMessage.textContent = `Added words: ${orchestrator.getAddedWords(word).join(', ')}`
 
@@ -53,7 +53,7 @@ addWordBtn.addEventListener('click', () => {
 startGameBtn.addEventListener('click', () => {
   twoPlayerContainer.classList.add('hidden')
   onePlayerContainer.classList.remove('hidden')
-  const customWordList = orchestrator.addCustomWord([])
+  const customWordList = orchestrator.handleAddCustomWord([])
   selectedWord = customWordList.selectRandomWord()
   guessedWord = Array(selectedWord.length).fill('_')
   updateWordDisplay()

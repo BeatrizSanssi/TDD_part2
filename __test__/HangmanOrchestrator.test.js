@@ -19,7 +19,7 @@ describe('HangmanOrchestrator', () => {
   it('should let the user create a custom word list', () => {
     const hangman = new HangmanOrchestrator()
     const word = 'hangman'
-    const customWordList = hangman.addCustomWord(word)
+    const customWordList = hangman.handleAddCustomWord(word)
 
     expect(customWordList).toContain(word)
   })
@@ -27,7 +27,7 @@ describe('HangmanOrchestrator', () => {
   it('should get the list of added words', () => {
     const hangman = new HangmanOrchestrator()
     const word = 'hangman'
-    hangman.addCustomWord(word)
+    hangman.handleAddCustomWord(word)
  
     expect(hangman.getAddedWords()).toContain(word)
   })
@@ -35,9 +35,9 @@ describe('HangmanOrchestrator', () => {
   it('should use the correct word list, depending on if user chooses single game play or two players', () => {
     const hangman = new HangmanOrchestrator()
     const customWords = ['hangman', 'javascript', 'programming']
-    customWords.forEach(word => hangman.addCustomWord(word))
+    customWords.forEach(word => hangman.handleAddCustomWord(word))
     const customWordList = true
-    const wordList = hangman.chooseWordList(customWordList)
+    const wordList = hangman.handleChooseWordList(customWordList)
 
     expect(wordList).toEqual(customWords)
   })
@@ -60,8 +60,8 @@ describe('HangmanOrchestrator', () => {
   it('should only display the added word once', () => {
     const hangman = new HangmanOrchestrator()
     const word = 'hangman'
-    hangman.addCustomWord(word)
+    hangman.handleAddCustomWord(word)
 
-    expect(hangman.addCustomWord(word)).toEqual([word])
+    expect(hangman.handleAddCustomWord(word)).toEqual([word])
   })
 })

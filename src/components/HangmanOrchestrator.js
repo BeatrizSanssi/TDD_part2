@@ -19,7 +19,11 @@ export class HangmanOrchestrator {
     this.#wordGuesser = new WordGuesser()
   }
 
-  addCustomWord(word) {
+  handleAddCustomWord(word) {
+    return this.#addCustomWord(word)
+  }
+
+  #addCustomWord(word) {
     if (!this.#addedWords.includes(word)) {
       this.#addedWords.push(word)
     }
@@ -30,7 +34,11 @@ export class HangmanOrchestrator {
     return this.#addedWords
   }
 
-  chooseWordList(customWordList) {
+  handleChooseWordList(customWordList) {
+    return this.#chooseWordList(customWordList)
+  }
+
+  #chooseWordList(customWordList) {
     if (customWordList) {
       this.#customWordList = new CustomWordList(this.#addedWords)
       return this.#customWordList.getWordList()

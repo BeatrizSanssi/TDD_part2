@@ -11,7 +11,7 @@ describe('Alphabet', () => {
     const alphabet = new Alphabet()
     const guessedLetter = 'h'
 
-    alphabet.disableGuessedLetter(guessedLetter)
+    alphabet.handleDisableGuessedLetter(guessedLetter)
     const updatedAlphabet = alphabet.getAlphabet()
 
     expect(updatedAlphabet).not.toContain(guessedLetter)
@@ -23,7 +23,7 @@ describe('Alphabet', () => {
     const guessedLetter = 'c'
 
     document.addEventListener('letterDisabled', mockListener)
-    alphabet.disableGuessedLetter(guessedLetter)
+    alphabet.handleDisableGuessedLetter(guessedLetter)
 
     expect(mockListener).toHaveBeenCalled()
   })
